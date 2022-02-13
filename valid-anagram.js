@@ -23,13 +23,9 @@ s and t consist of lowercase English letters.
 Follow up: What if the inputs contain Unicode characters? How would you adapt your solution to such a case?
 */
 
-const t = "anagram"
-const s = "nagaram"
-
-const isAnagram = function() {
+const isAnagram = function(s,t) {
     return s.split('').sort().join()===t.split('').sort().join()
 };
 
-console.log(isAnagram())
-console.log(7/10)
+console.log(isAnagram("nagaram","anagram"))
 
