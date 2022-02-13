@@ -31,4 +31,5 @@ const isAnagram = function() {
 };
 
 console.log(isAnagram())
+console.log(7/10)
 
