@@ -4,7 +4,7 @@
  Server
  
 - [Start Server Local](./README.md#start-server-local)
-- [Examples-About-Query](./README.md#examples-about-query)
+- [Examples of Query By Using CRUD API](./README.md# examples-about -query-by-CRUD-API)
 - [Test Server](./README.md#test-server)
 
 ### Start Server Local
@@ -30,7 +30,7 @@ Start server local
 yarn dev
 ```
 
-### Examples about Query
+### Examples About Query by CRUD API
 
 Getting users with paging : page = 3, limit = 5
 ```
