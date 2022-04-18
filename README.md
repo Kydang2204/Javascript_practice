@@ -1,6 +1,6 @@
 # Server
 
- - [Quick start](./README.md#Examples-about-query)
+ - [Quick start](./README.md#Examples-about-quey)
 
 ### Examples about query
 
