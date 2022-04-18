@@ -17,7 +17,7 @@ Install dependencies:
 ```
 yarn
 ```
-Start MongoDB database
+Start MongoDB database local
 ```
 docker-compose up -d
 ```
