@@ -1,8 +1,8 @@
  # NFT Land
  
 ###  Table of Contents 
-
 Server :
+
 - [Start Server Local](./README.md#start-server)
 - [Examples-About-Query](./README.md#examples-about-query)
 - [Test Server](./README.md#test-server)
@@ -32,21 +32,21 @@ yarn dev
 
 ### Examples about Query
 
-Getting docs with paging : page = 3, limit = 5
+Getting users with paging : page = 3, limit = 5
 ```
 localhost:3005/api/User?isPaging=true&page=3&limit=5
 ```
-Getting docs with descending name and ascending createdAt
+Getting users with descending name and ascending createdAt
 ```
-localhost:3005/api/User?sort="-name createdAt"
+localhost:3005/api/User?sort=-name createdAt
 ```
-Getting docs with populating userType and reward
+Getting users with populating userType and notificationSettings
 ```
-localhost:3005/api/User?populate="userType,reward"
+localhost:3005/api/User?populate=userType,notificationSettings
 ```
-Finding docs that have name is Guest
+Finding users that have name is guest and email is guest@nft.com
 ```
-localhost:3005/api/User?filter={"name":"Guest"}
+localhost:3005/api/User?filter={"name":"guest","email":"guest@nft.com"}
 ```
 
  ###  Test Server
