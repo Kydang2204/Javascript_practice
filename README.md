@@ -45,7 +45,6 @@ Getting docs with populating userType and reward
 localhost:3005/api/User?populate="userType,reward"
 ```
 Finding docs that have name is Guest
-
 ```
 localhost:3005/api/User?filter={"name":"Guest"}
 ```
@@ -53,12 +52,11 @@ localhost:3005/api/User?filter={"name":"Guest"}
  ###  Test Server
  
 At backend folder, after installing dependencies, starting database 
-we will create .env.test file. 
+we create .env.test file. 
 ```
 cp .env.example .env.test
 ```
-Edit MONGODB_ACCESS_POINT by a url for testing.
-Run test
+Edit MONGODB_ACCESS_POINT by a url for testing and run test
 ```
 yarn test
 ```
