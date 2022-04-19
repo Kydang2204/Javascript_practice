@@ -3,7 +3,7 @@
 ## Table of Contents 
 [Getting Started](./README.md#getting-started)
 
- -  [Start Server Local](./README.md#start-server-local)
+ -  [Start Local Server](./README.md#start-local-server)
  
 [Documentation](./README.md#documentation)
 
@@ -11,10 +11,11 @@
 
 	- [CRUD API](./README.md#crud-api)
 
-	- [Testing Server](./README.md#test-server)
+[Testing](./README.md#testing)
+- [Test Server](./README.md#test-server)
 
 ## Getting Started
-### Start Server Local
+### Start Local Server
 
 Changing to backend directory
 ```
@@ -40,7 +41,7 @@ yarn dev
 ## Documentation
 ### Server
 #### CRUD API
-
+**Examples of Query**
 Getting users with paging : page = 3, limit = 5
 ```
 localhost:3005/api/User?isPaging=true&page=3&limit=5
@@ -58,14 +59,14 @@ Finding users that have name is guest and email is guest@nft.com
 localhost:3005/api/User?filter={"name":"guest","email":"guest@nft.com"}
 ```
 
- ####  Test Server
+ ##  Testing
+ ### Test Server
  
-At backend folder, after installing dependencies, starting database 
-we create .env.test file. 
+At backend folder, after installing dependencies, starting database, we create .env.test file. 
 ```
 cp .env.example .env.test
 ```
-Edit MONGODB_ACCESS_POINT by a url for testing and run test
+Edit MONGODB_ACCESS_POINT by a url for testing and run test by command line.
 ```
 yarn test
 ```
