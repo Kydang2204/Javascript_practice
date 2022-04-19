@@ -5,7 +5,7 @@
 
  -  [Start Server Local](./README.md#start-server-local)
  
-[Documents](./README.md#documents)
+[Documentation](./README.md#documentation)
 
 -	[Server](./README.md#server)
 
@@ -24,7 +24,7 @@ Install dependencies:
 ```
 yarn
 ```
-Start MongoDB database local
+Start local database
 ```
 docker-compose up -d
 ```
@@ -37,8 +37,7 @@ Start server local
 yarn dev
 ```
 
-## Documents
-
+## Documentation
 ### Server
 #### CRUD API
 
