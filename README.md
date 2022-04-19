@@ -1,4 +1,4 @@
- # NFT Land
+# NFT Land
  
 ## Table of Contents 
 [Getting Started](./README.md#getting-started)
@@ -17,7 +17,7 @@
 ## Getting Started
 ### Start Local Server
 
-Changing to backend directory
+Change to backend directory
 ```
 cd backend
 ```
@@ -42,35 +42,47 @@ yarn dev
 ### Server
 #### CRUD API
 
-With CRUD API we can get docs, create a doc,  get, update, delete a doc by id of any available model that we have permission.
+With CRUD API we can get docs, create a doc,  get, update, delete a doc by id of any available model.
+- Get docs 
+```
+GET api/modelName
+```
+- Get a doc by id
+```
+GET api/modelName/id
+```
+- Update a doc
+```
+PUT api/modelName/id
+```
+- Create a doc
+```
+POST api/modelName
+```
+- Delete a doc
+```
+DELETE api/modelName/id
+```
+We also can query page, limit, isPaging, populate, filter, sort as these examples.
+- Get users with paging : page = 3, limit = 5
+```
+GET  api/User?isPaging=true&page=3&limit=5
+```
+- Get users with descending name and ascending createdAt
+```
+GET api/User?sort=-name createdAt
+```
+- Get users with populating userType and notificationSettings properties
+```
+GET api/User?populate=userType,notificationSettings
+```
+- Find users that have name is "guest" and email is "guest@nft.com"
+```
+GET api/User?filter={"name":"guest","email":"guest@nft.com"}
+```
 
-- Getting docs by using GET method to baseUrl/prefix/modelName
-- Getting a doc by using GET method to baseUrl/prefix/modelName/id
-- Creating a doc by using POST method to  baseUrl/Prefix/modelName
-- Updating a doc by using PUT method to  baseUrl/prefix/modelName/id
-- Deleting a doc by using DELETE method to baseUrl/prefix/modelName/id
-
-We also can query paging, populate, filter, sort as these examples.
-
-- Getting users with paging : page = 3, limit = 5
-```
-localhost:3005/api/User?isPaging=true&page=3&limit=5
-```
-- Getting users with descending name and ascending createdAt
-```
-localhost:3005/api/User?sort=-name createdAt
-```
-- Getting users with populating userType and notificationSettings
-```
-localhost:3005/api/User?populate=userType,notificationSettings
-```
-- Finding users that have name is guest and email is guest@nft.com
-```
-localhost:3005/api/User?filter={"name":"guest","email":"guest@nft.com"}
-```
-
- ##  Test
- ### Test Server
+##  Test
+### Test Server
  
 At backend folder, after installing dependencies, starting database, we create .env.test file. 
 ```
