@@ -42,6 +42,7 @@ yarn dev
 ### Server
 #### CRUD API
 **Examples of Query**
+
 Getting users with paging : page = 3, limit = 5
 ```
 localhost:3005/api/User?isPaging=true&page=3&limit=5
