@@ -1,13 +1,19 @@
  # NFT Land
+ 
+## Table of Contents 
+[Getting Started](./README.md#getting-started)
 
-## Server
+ -  [Start Server Local](./README.md#start-server-local)
+ 
+[Documents](./README.md#documents)
 
-### Table of Contents 
+-	[Server](./README.md#server)
 
-- [Start Server Local](./README.md#start-server-local)
-- [Examples of Query by Using CRUD API](./README.md#examples-of-query-by-using-crud-api)
-- [Test Server](./README.md#test-server)
+	- [CRUD API](./README.md#crud-api)
 
+	- [Testing Server](./README.md#test-server)
+
+## Getting Started
 ### Start Server Local
 
 Changing to backend directory
@@ -31,7 +37,10 @@ Start server local
 yarn dev
 ```
 
-### Examples of Query By Using CRUD API
+## Documents
+
+### Server
+#### CRUD API
 
 Getting users with paging : page = 3, limit = 5
 ```
@@ -50,7 +59,7 @@ Finding users that have name is guest and email is guest@nft.com
 localhost:3005/api/User?filter={"name":"guest","email":"guest@nft.com"}
 ```
 
- ###  Test Server
+ ####  Test Server
  
 At backend folder, after installing dependencies, starting database 
 we create .env.test file. 
