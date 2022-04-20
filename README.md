@@ -19,23 +19,23 @@
 
 Change to backend directory
 ```
-cd backend
+	cd backend
 ```
 Install dependencies:
 ```
-yarn
+	yarn
 ```
 Start local database by docker-compose
 ```
-docker-compose up -d
+	docker-compose up -d
 ```
 Create file .env
 ```
-cp .env.example .env
+	cp .env.example .env
 ```
 Start server local
 ```
-yarn dev
+	yarn dev
 ```
 
 ## Documentation
@@ -45,40 +45,40 @@ yarn dev
 With CRUD API we can get docs, create a doc,  get, update, delete a doc by id of any available model.
 - Get docs 
 ```
-GET api/modelName
+	GET api/modelName
 ```
 - Get a doc by id
 ```
-GET api/modelName/id
+	GET api/modelName/id
 ```
 - Update a doc
 ```
-PUT api/modelName/id
+	PUT api/modelName/id
 ```
 - Create a doc
 ```
-POST api/modelName
+	POST api/modelName
 ```
 - Delete a doc
 ```
-DELETE api/modelName/id
+	DELETE api/modelName/id
 ```
 We also can query page, limit, isPaging, populate, filter, sort as these examples.
 - Get users with paging : page = 3, limit = 5
 ```
-GET  api/User?isPaging=true&page=3&limit=5
+	GET  api/User?isPaging=true&page=3&limit=5
 ```
 - Get users with descending name and ascending createdAt
 ```
-GET api/User?sort=-name createdAt
+	GET api/User?sort=-name createdAt
 ```
 - Get users with populating userType and notificationSettings properties
 ```
-GET api/User?populate=userType,notificationSettings
+	GET api/User?populate=userType,notificationSettings
 ```
 - Find users that have name is "guest" and email is "guest@nft.com"
 ```
-GET api/User?filter={"name":"guest","email":"guest@nft.com"}
+	GET api/User?filter={"name":"guest","email":"guest@nft.com"}
 ```
 
 ##  Test
@@ -86,9 +86,9 @@ GET api/User?filter={"name":"guest","email":"guest@nft.com"}
  
 At backend folder, after installing dependencies, starting database, we create .env.test file. 
 ```
-cp .env.example .env.test
+	cp .env.example .env.test
 ```
 Edit MONGODB_ACCESS_POINT by a url for testing and run test by command line.
 ```
-yarn test
+	yarn test
 ```
