@@ -3,13 +3,6 @@
 ## Table of Contents 
 [Getting Started](./README.md#getting-started)
 
-- [Start Local](./README.md#start-local)
-
-# NFT Land Backend
-
-## Table of Contents 
-[Getting Started](./README.md#getting-started)
-
 - [Start Local Server](./README.md#start-locally-server)
 
 [Documentation](./README.md#documentation)
