@@ -3,7 +3,7 @@
 ## Table of Contents 
 [Getting Started](./README.md#getting-started)
 
-- [Start Local Server](./README.md#start-locally-server)
+- [Start Local Server](./README.md#start-local-server)
 
 [Documentation](./README.md#documentation)
 
