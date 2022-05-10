@@ -5,6 +5,13 @@
 
 - [Start Local](./README.md#start-local)
 
+# NFT Land Backend
+
+## Table of Contents 
+[Getting Started](./README.md#getting-started)
+
+- [Start Local Server](./README.md#start-locally-server)
+
 [Documentation](./README.md#documentation)
 
 - [CRUD API](./README.md#crud-api)
@@ -12,7 +19,7 @@
 [Test](./README.md#test)
 
 ## Getting Started
-### Start Local
+### Start Local Server
 
 Change to backend directory
 ```
